@@ -1,0 +1,40 @@
+# Git 相关
+.git
+.gitignore
+
+# Go 相关
+*.mod
+*.sum
+main
+
+# 测试文件
+*_test.go
+benchmarks_test.go
+
+# 依赖目录
+vendor/
+
+# 日志文件
+*.log
+
+# IDE 配置
+.vscode/
+.idea/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 文档
+docs/
+examples/
+testdata/
+
+# 临时文件
+*.tmp
+*.temp
+
+# Docker 相关
+Dockerfile
+.dockerignore
+.dockerignore
