@@ -3,8 +3,6 @@
 .gitignore
 
 # Go 相关
-*.mod
-*.sum
 main
 
 # 测试文件

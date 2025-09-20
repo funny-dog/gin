@@ -1,11 +1,12 @@
-FROM golang:1.20-alpine AS builder
+FROM golang:1.17-alpine AS builder
+RUN apk add --no-cache git
 
 WORKDIR /app
 
 COPY go.mod ./
 COPY go.sum ./
 
-RUN go mod download
+RUN GOPROXY=direct go mod download
 
 COPY . .
 
